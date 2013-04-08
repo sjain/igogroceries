@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E74EA2CE1713681F00283EE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2CD1713681F00283EE1 /* UIKit.framework */; };
+		E74EA2D01713681F00283EE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2CF1713681F00283EE1 /* Foundation.framework */; };
+		E74EA2D21713681F00283EE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2D11713681F00283EE1 /* CoreGraphics.framework */; };
+		E74EA2D41713681F00283EE1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2D31713681F00283EE1 /* CoreData.framework */; };
+		E74EA2DA1713681F00283EE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2D81713681F00283EE1 /* InfoPlist.strings */; };
+		E74EA2DC1713681F00283EE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2DB1713681F00283EE1 /* main.m */; };
+		E74EA2E01713681F00283EE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2DF1713681F00283EE1 /* AppDelegate.m */; };
+		E74EA2E21713681F00283EE1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E11713681F00283EE1 /* Default.png */; };
+		E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E31713681F00283EE1 /* Default@2x.png */; };
+		E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E51713681F00283EE1 /* Default-568h@2x.png */; };
+		E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */; };
+		E74EA2EC1713681F00283EE1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EB1713681F00283EE1 /* MasterViewController.m */; };
+		E74EA2EF1713681F00283EE1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EE1713681F00283EE1 /* DetailViewController.m */; };
+		E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */; };
+		E74EA2F51713681F00283EE1 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */; };
+		E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */; };
+		E74EA2FB1713681F00283EE1 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74EA2CD1713681F00283EE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E74EA2CF1713681F00283EE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E74EA2D11713681F00283EE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E74EA2D31713681F00283EE1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E74EA2D71713681F00283EE1 /* GroceriesToGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroceriesToGo-Info.plist"; sourceTree = "<group>"; };
+		E74EA2D91713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E74EA2DB1713681F00283EE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E74EA2DD1713681F00283EE1 /* GroceriesToGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroceriesToGo-Prefix.pch"; sourceTree = "<group>"; };
+		E74EA2DE1713681F00283EE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E74EA2DF1713681F00283EE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E74EA2E11713681F00283EE1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E74EA2E31713681F00283EE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E74EA2E51713681F00283EE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E74EA2E81713681F00283EE1 /* GroceriesToGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroceriesToGo.xcdatamodel; sourceTree = "<group>"; };
+		E74EA2EA1713681F00283EE1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E74EA2EB1713681F00283EE1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E74EA2ED1713681F00283EE1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E74EA2EE1713681F00283EE1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		E74EA2F41713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		E74EA2FA1713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E74EA2C71713681F00283EE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74EA2CE1713681F00283EE1 /* UIKit.framework in Frameworks */,
+				E74EA2D01713681F00283EE1 /* Foundation.framework in Frameworks */,
+				E74EA2D21713681F00283EE1 /* CoreGraphics.framework in Frameworks */,
+				E74EA2D41713681F00283EE1 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E74EA2C11713681F00283EE1 = {
+			isa = PBXGroup;
+			children = (
+				E74EA2D51713681F00283EE1 /* GroceriesToGo */,
+				E74EA2CC1713681F00283EE1 /* Frameworks */,
+				E74EA2CB1713681F00283EE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E74EA2CB1713681F00283EE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E74EA2CC1713681F00283EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2CD1713681F00283EE1 /* UIKit.framework */,
+				E74EA2CF1713681F00283EE1 /* Foundation.framework */,
+				E74EA2D11713681F00283EE1 /* CoreGraphics.framework */,
+				E74EA2D31713681F00283EE1 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E74EA2D51713681F00283EE1 /* GroceriesToGo */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2DE1713681F00283EE1 /* AppDelegate.h */,
+				E74EA2DF1713681F00283EE1 /* AppDelegate.m */,
+				E74EA2EA1713681F00283EE1 /* MasterViewController.h */,
+				E74EA2EB1713681F00283EE1 /* MasterViewController.m */,
+				E74EA2ED1713681F00283EE1 /* DetailViewController.h */,
+				E74EA2EE1713681F00283EE1 /* DetailViewController.m */,
+				E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */,
+				E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */,
+				E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */,
+				E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */,
+				E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */,
+				E74EA2D61713681F00283EE1 /* Supporting Files */,
+			);
+			path = GroceriesToGo;
+			sourceTree = "<group>";
+		};
+		E74EA2D61713681F00283EE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2D71713681F00283EE1 /* GroceriesToGo-Info.plist */,
+				E74EA2D81713681F00283EE1 /* InfoPlist.strings */,
+				E74EA2DB1713681F00283EE1 /* main.m */,
+				E74EA2DD1713681F00283EE1 /* GroceriesToGo-Prefix.pch */,
+				E74EA2E11713681F00283EE1 /* Default.png */,
+				E74EA2E31713681F00283EE1 /* Default@2x.png */,
+				E74EA2E51713681F00283EE1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E74EA2C91713681F00283EE1 /* GroceriesToGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "GroceriesToGo" */;
+			buildPhases = (
+				E74EA2C61713681F00283EE1 /* Sources */,
+				E74EA2C71713681F00283EE1 /* Frameworks */,
+				E74EA2C81713681F00283EE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroceriesToGo;
+			productName = GroceriesToGo;
+			productReference = E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E74EA2C21713681F00283EE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "GroceryPORT.com, Inc.";
+			};
+			buildConfigurationList = E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "GroceriesToGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E74EA2C11713681F00283EE1;
+			productRefGroup = E74EA2CB1713681F00283EE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E74EA2C91713681F00283EE1 /* GroceriesToGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E74EA2C81713681F00283EE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74EA2DA1713681F00283EE1 /* InfoPlist.strings in Resources */,
+				E74EA2E21713681F00283EE1 /* Default.png in Resources */,
+				E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */,
+				E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */,
+				E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */,
+				E74EA2F51713681F00283EE1 /* MasterViewController_iPad.xib in Resources */,
+				E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */,
+				E74EA2FB1713681F00283EE1 /* DetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E74EA2C61713681F00283EE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74EA2DC1713681F00283EE1 /* main.m in Sources */,
+				E74EA2E01713681F00283EE1 /* AppDelegate.m in Sources */,
+				E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */,
+				E74EA2EC1713681F00283EE1 /* MasterViewController.m in Sources */,
+				E74EA2EF1713681F00283EE1 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E74EA2D81713681F00283EE1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74EA2D91713681F00283EE1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74EA2F11713681F00283EE1 /* en */,
+			);
+			name = MasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74EA2F41713681F00283EE1 /* en */,
+			);
+			name = MasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74EA2F71713681F00283EE1 /* en */,
+			);
+			name = DetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E74EA2FA1713681F00283EE1 /* en */,
+			);
+			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E74EA2FC1713681F00283EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E74EA2FD1713681F00283EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E74EA2FF1713681F00283EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroceriesToGo/GroceriesToGo-Prefix.pch";
+				INFOPLIST_FILE = "GroceriesToGo/GroceriesToGo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E74EA3001713681F00283EE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GroceriesToGo/GroceriesToGo-Prefix.pch";
+				INFOPLIST_FILE = "GroceriesToGo/GroceriesToGo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "GroceriesToGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74EA2FC1713681F00283EE1 /* Debug */,
+				E74EA2FD1713681F00283EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "GroceriesToGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74EA2FF1713681F00283EE1 /* Debug */,
+				E74EA3001713681F00283EE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E74EA2E81713681F00283EE1 /* GroceriesToGo.xcdatamodel */,
+			);
+			currentVersion = E74EA2E81713681F00283EE1 /* GroceriesToGo.xcdatamodel */;
+			path = GroceriesToGo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E74EA2C21713681F00283EE1 /* Project object */;
+}
