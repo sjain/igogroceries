@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	E74EA2C21713681F00283EE1 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E7A677CD171370AB0095459E /* GroceriesToGo */;
+		activeTarget = E74EA2C91713681F00283EE1 /* GroceriesToGo */;
+		codeSenseManager = E7A677E0171370BA0095459E /* Code sense */;
+		executables = (
+			E7A677CD171370AB0095459E /* GroceriesToGo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1248,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 387150046;
+			PBXWorkspaceStateSaveDate = 387150046;
+		};
+		sourceControlManager = E7A677DF171370BA0095459E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E74EA2C91713681F00283EE1 /* GroceriesToGo */ = {
+		activeExec = 0;
+		executables = (
+			E7A677CD171370AB0095459E /* GroceriesToGo */,
+		);
+	};
+	E7A677CD171370AB0095459E /* GroceriesToGo */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = GroceriesToGo;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	E7A677DF171370BA0095459E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E7A677E0171370BA0095459E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
