@@ -332,14 +332,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1472, 682}}</string>
+								<string>{{0, 0}, {1472, 677}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 60 1680 968 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>682pt</string>
+							<string>677pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -352,14 +352,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 687}, {1472, 240}}</string>
+								<string>{{0, 682}, {1472, 245}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 60 1680 968 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>240pt</string>
+							<string>245pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -378,9 +378,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E7A677F7171371370095459E</string>
+				<string>E70078071717A4E800EAC603</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E7A677F8171371370095459E</string>
+				<string>E70078081717A4E800EAC603</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -518,7 +518,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C0AD2AF069F1E9B00FABCE6</string>
 		<string>E7A677DD171370B90095459E</string>
 		<string>/Users/sjain/projects/personal/GroceriesToGo/GroceriesToGo.xcodeproj</string>
 	</array>
@@ -600,7 +599,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E7A677DD171370B90095459E</string>
-				<string>E7A677EC171370F40095459E</string>
+				<string>E70078091717A4E800EAC603</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -29,15 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74EA2CA1713681F00283EE1 /* iGoGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74EA2CD1713681F00283EE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E74EA2CF1713681F00283EE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E74EA2D11713681F00283EE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E74EA2D31713681F00283EE1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E74EA2D71713681F00283EE1 /* GroceriesToGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroceriesToGo-Info.plist"; sourceTree = "<group>"; };
+		E74EA2D71713681F00283EE1 /* iGoGroceries-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iGoGroceries-Info.plist"; sourceTree = "<group>"; };
 		E74EA2D91713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E74EA2DB1713681F00283EE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E74EA2DD1713681F00283EE1 /* GroceriesToGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroceriesToGo-Prefix.pch"; sourceTree = "<group>"; };
+		E74EA2DD1713681F00283EE1 /* iGoGroceries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGoGroceries-Prefix.pch"; sourceTree = "<group>"; };
 		E74EA2DE1713681F00283EE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E74EA2DF1713681F00283EE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E74EA2E11713681F00283EE1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		E74EA2CB1713681F00283EE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */,
+				E74EA2CA1713681F00283EE1 /* iGoGroceries.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,10 +125,10 @@
 		E74EA2D61713681F00283EE1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E74EA2D71713681F00283EE1 /* GroceriesToGo-Info.plist */,
+				E74EA2D71713681F00283EE1 /* iGoGroceries-Info.plist */,
 				E74EA2D81713681F00283EE1 /* InfoPlist.strings */,
 				E74EA2DB1713681F00283EE1 /* main.m */,
-				E74EA2DD1713681F00283EE1 /* GroceriesToGo-Prefix.pch */,
+				E74EA2DD1713681F00283EE1 /* iGoGroceries-Prefix.pch */,
 				E74EA2E11713681F00283EE1 /* Default.png */,
 				E74EA2E31713681F00283EE1 /* Default@2x.png */,
 				E74EA2E51713681F00283EE1 /* Default-568h@2x.png */,
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E74EA2C91713681F00283EE1 /* GroceriesToGo */ = {
+		E74EA2C91713681F00283EE1 /* iGoGroceries */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "GroceriesToGo" */;
+			buildConfigurationList = E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "iGoGroceries" */;
 			buildPhases = (
 				E74EA2C61713681F00283EE1 /* Sources */,
 				E74EA2C71713681F00283EE1 /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = GroceriesToGo;
+			name = iGoGroceries;
 			productName = GroceriesToGo;
-			productReference = E74EA2CA1713681F00283EE1 /* GroceriesToGo.app */;
+			productReference = E74EA2CA1713681F00283EE1 /* iGoGroceries.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "GroceryPORT.com, Inc.";
 			};
-			buildConfigurationList = E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "GroceriesToGo" */;
+			buildConfigurationList = E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "iGoGroceries" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E74EA2C91713681F00283EE1 /* GroceriesToGo */,
+				E74EA2C91713681F00283EE1 /* iGoGroceries */,
 			);
 		};
 /* End PBXProject section */
@@ -323,10 +323,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GroceriesToGo/GroceriesToGo-Prefix.pch";
-				INFOPLIST_FILE = "GroceriesToGo/GroceriesToGo-Info.plist";
+				GCC_PREFIX_HEADER = "GroceriesToGo/iGoGroceries-Prefix.pch";
+				INFOPLIST_FILE = "GroceriesToGo/iGoGroceries-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iGoGroceries;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,10 +336,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GroceriesToGo/GroceriesToGo-Prefix.pch";
-				INFOPLIST_FILE = "GroceriesToGo/GroceriesToGo-Info.plist";
+				GCC_PREFIX_HEADER = "GroceriesToGo/iGoGroceries-Prefix.pch";
+				INFOPLIST_FILE = "GroceriesToGo/iGoGroceries-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iGoGroceries;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "GroceriesToGo" */ = {
+		E74EA2C51713681F00283EE1 /* Build configuration list for PBXProject "iGoGroceries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E74EA2FC1713681F00283EE1 /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "GroceriesToGo" */ = {
+		E74EA2FE1713681F00283EE1 /* Build configuration list for PBXNativeTarget "iGoGroceries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E74EA2FF1713681F00283EE1 /* Debug */,
