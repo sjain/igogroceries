@@ -21,11 +21,7 @@
 		E74EA2EC1713681F00283EE1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EB1713681F00283EE1 /* MasterViewController.m */; };
 		E74EA2EF1713681F00283EE1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EE1713681F00283EE1 /* DetailViewController.m */; };
 		E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */; };
-		E74EA2F51713681F00283EE1 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */; };
 		E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */; };
-		E74EA2FB1713681F00283EE1 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */; };
-		E74EA3021713707C00283EE1 /* stores.txt in Resources */ = {isa = PBXBuildFile; fileRef = E74EA3011713707C00283EE1 /* stores.txt */; };
-		E74EA304171372FD00283EE1 /* stores.plist in Resources */ = {isa = PBXBuildFile; fileRef = E74EA303171372FD00283EE1 /* stores.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +45,7 @@
 		E74EA2ED1713681F00283EE1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		E74EA2EE1713681F00283EE1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
-		E74EA2F41713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
-		E74EA2FA1713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
-		E74EA3011713707C00283EE1 /* stores.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stores.txt; sourceTree = "<group>"; };
-		E74EA303171372FD00283EE1 /* stores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stores.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +96,6 @@
 		E74EA2D51713681F00283EE1 /* GroceriesToGo */ = {
 			isa = PBXGroup;
 			children = (
-				E74EA303171372FD00283EE1 /* stores.plist */,
-				E74EA3011713707C00283EE1 /* stores.txt */,
 				E74EA2DE1713681F00283EE1 /* AppDelegate.h */,
 				E74EA2DF1713681F00283EE1 /* AppDelegate.m */,
 				E74EA2EA1713681F00283EE1 /* MasterViewController.h */,
@@ -113,9 +103,7 @@
 				E74EA2ED1713681F00283EE1 /* DetailViewController.h */,
 				E74EA2EE1713681F00283EE1 /* DetailViewController.m */,
 				E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */,
-				E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */,
 				E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */,
-				E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */,
 				E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */,
 				E74EA2D61713681F00283EE1 /* Supporting Files */,
 			);
@@ -192,11 +180,7 @@
 				E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */,
 				E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */,
 				E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */,
-				E74EA2F51713681F00283EE1 /* MasterViewController_iPad.xib in Resources */,
 				E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */,
-				E74EA2FB1713681F00283EE1 /* DetailViewController_iPad.xib in Resources */,
-				E74EA3021713707C00283EE1 /* stores.txt in Resources */,
-				E74EA304171372FD00283EE1 /* stores.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,28 +218,12 @@
 			name = MasterViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		E74EA2F31713681F00283EE1 /* MasterViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E74EA2F41713681F00283EE1 /* en */,
-			);
-			name = MasterViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 		E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E74EA2F71713681F00283EE1 /* en */,
 			);
 			name = DetailViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		E74EA2F91713681F00283EE1 /* DetailViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E74EA2FA1713681F00283EE1 /* en */,
-			);
-			name = DetailViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -325,7 +293,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroceriesToGo/iGoGroceries-Prefix.pch";
 				INFOPLIST_FILE = "GroceriesToGo/iGoGroceries-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = iGoGroceries;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -338,7 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroceriesToGo/iGoGroceries-Prefix.pch";
 				INFOPLIST_FILE = "GroceriesToGo/iGoGroceries-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = iGoGroceries;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

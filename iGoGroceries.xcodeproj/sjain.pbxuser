@@ -3,7 +3,7 @@
 	E74EA2C21713681F00283EE1 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = E7A677CD171370AB0095459E /* GroceriesToGo */;
-		activeTarget = E74EA2C91713681F00283EE1 /* GroceriesToGo */;
+		activeTarget = E74EA2C91713681F00283EE1 /* iGoGroceries */;
 		codeSenseManager = E7A677E0171370BA0095459E /* Code sense */;
 		executables = (
 			E7A677CD171370AB0095459E /* GroceriesToGo */,
@@ -14,7 +14,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1248,
+					1037,
 					20,
 					48,
 					43,
@@ -31,14 +31,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 387425486;
-			PBXWorkspaceStateSaveDate = 387425486;
+			PBXPerProjectTemplateStateSaveDate = 390171256;
+			PBXWorkspaceStateSaveDate = 390171256;
 		};
 		sourceControlManager = E7A677DF171370BA0095459E /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	E74EA2C91713681F00283EE1 /* GroceriesToGo */ = {
+	E74EA2C91713681F00283EE1 /* iGoGroceries */ = {
 		activeExec = 0;
 		executables = (
 			E7A677CD171370AB0095459E /* GroceriesToGo */,
