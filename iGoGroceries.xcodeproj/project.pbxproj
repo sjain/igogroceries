@@ -96,15 +96,10 @@
 		E74EA2D51713681F00283EE1 /* GroceriesToGo */ = {
 			isa = PBXGroup;
 			children = (
+				E7EE3FB1174192F60098EED9 /* Controllers */,
+				E7EE3FB0174192EE0098EED9 /* Resources */,
 				E74EA2DE1713681F00283EE1 /* AppDelegate.h */,
 				E74EA2DF1713681F00283EE1 /* AppDelegate.m */,
-				E74EA2EA1713681F00283EE1 /* MasterViewController.h */,
-				E74EA2EB1713681F00283EE1 /* MasterViewController.m */,
-				E74EA2ED1713681F00283EE1 /* DetailViewController.h */,
-				E74EA2EE1713681F00283EE1 /* DetailViewController.m */,
-				E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */,
-				E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */,
-				E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */,
 				E74EA2D61713681F00283EE1 /* Supporting Files */,
 			);
 			path = GroceriesToGo;
@@ -122,6 +117,27 @@
 				E74EA2E51713681F00283EE1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7EE3FB0174192EE0098EED9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E7EE3FB1174192F60098EED9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2EA1713681F00283EE1 /* MasterViewController.h */,
+				E74EA2EB1713681F00283EE1 /* MasterViewController.m */,
+				E74EA2ED1713681F00283EE1 /* DetailViewController.h */,
+				E74EA2EE1713681F00283EE1 /* DetailViewController.m */,
+				E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */,
+				E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
