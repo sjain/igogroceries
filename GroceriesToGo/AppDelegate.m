@@ -9,14 +9,10 @@
 #import "AppDelegate.h"
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "FMDatabase.h"
 
-@interface AppDelegate() {
-  NSMutableDictionary *storeCountsByState;
-  FMDatabase *_database;
-}
+@interface AppDelegate() {}
 
-- (void)loadStoresFromDatabase;
+- (void)openDatabase;
 
 @end
 
@@ -27,34 +23,26 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize database = _database;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  [self openDatabase];
   MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
   self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
   self.window.rootViewController = self.navigationController;
   masterViewController.managedObjectContext = self.managedObjectContext;
   [self.window makeKeyAndVisible];
-  [self loadStoresFromDatabase];
   return YES;
 }
 
-- (void)loadStoresFromDatabase
+- (void)openDatabase
 {
+  NSLog(@"opening database");
   NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"database.db"];
   _database = [FMDatabase databaseWithPath:path];
-  [_database open];
-  FMResultSet *results = [_database executeQuery:@"select state, count(*) as count from stores group by state"];
-  NSLog(@"printing results");
-  storeCountsByState = [[NSMutableDictionary alloc] initWithCapacity:60];
-  while([results next]) {
-    NSString *state = [results stringForColumn:@"state"];
-    int count  = [results intForColumn:@"count"];
-    NSLog(@"Store: %@ - %d", state, count);
-    [storeCountsByState setValue:[NSNumber numberWithInt:count] forKey:state];
-  }
-  NSLog(@"printing results done");
+  [self.database open];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -82,7 +70,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Saves changes in the application's managed object context before the application terminates.
-  [_database close];
+  NSLog(@"applicationWillTerminate() - closing database");
+  [self.database close];
   [self saveContext];
 }
 
