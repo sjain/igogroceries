@@ -10,5 +10,5 @@ require 'us_states'
 
 ActiveRecord::Base.establish_connection(
   :adapter => 'sqlite3',
-  :database =>  'data.sqlite'
+  :database =>  'database.sqlite'
 )
