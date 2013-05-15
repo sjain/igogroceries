@@ -11,7 +11,8 @@
 #import "FMDatabase.h"
 
 @interface MasterViewController () {
-  NSMutableDictionary *_storeCountsByState;
+  NSMutableArray *_sortedStateIDs;
+  NSMutableArray *_stateNameAndStoreCount;
   FMDatabase *_database;
 }
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -53,7 +54,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _storeCountsByState.count;
+    return _sortedStateIDs.count;
 }
 
 // Customize the appearance of table view cells.
@@ -73,13 +74,10 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-  NSArray *stateNames = [_storeCountsByState allKeys];
-  NSLog(@"stateNames: %@", stateNames);
-  int rowNumber = indexPath.row;
-  NSLog(@"rowNumber: %d", rowNumber);
-  NSString *key = [stateNames objectAtIndex:rowNumber];
-  NSLog(@"key = %@", key);
-  cell.textLabel.text = key;
+  NSDictionary *storeNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
+  NSString *storeName = [storeNameAndCount objectForKey:@"state"];
+  int storeCount = [((NSNumber *)[storeNameAndCount objectForKey:@"store_count"]) intValue];
+  cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d)", storeName, storeCount];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -110,14 +108,17 @@
 
 - (void)loadStoresFromDatabase
 {
-  FMResultSet *results = [_database executeQuery:@"select state, count(*) as count from stores group by state"];
-  NSLog(@"printing results");
-  _storeCountsByState = [[NSMutableDictionary alloc] initWithCapacity:60];
+  FMResultSet *results = [_database executeQuery:@"select us_states.id, us_states.name, count(*) as count from us_states inner join stores on stores.us_state_id = us_states.id group by us_states.name order by us_states.name asc"];
+  NSLog(@"iterating results");
+  _sortedStateIDs = [[NSMutableArray alloc] initWithCapacity:60];
+  _stateNameAndStoreCount = [[NSMutableArray alloc] initWithCapacity:60];
   while([results next]) {
-    NSString *state = [results stringForColumn:@"state"];
+    int stateID  = [results intForColumn:@"id"];
+    NSString *state = [results stringForColumn:@"name"];
     int count  = [results intForColumn:@"count"];
     NSLog(@"Store: %@ - %d", state, count);
-    [_storeCountsByState setValue:[NSNumber numberWithInt:count] forKey:state];
+    [_sortedStateIDs addObject:[NSNumber numberWithInt:stateID]];
+    [_stateNameAndStoreCount addObject:@{@"state": state, @"store_count": [NSNumber numberWithInt:count]}];
   }
   NSLog(@"printing results done");
 }
