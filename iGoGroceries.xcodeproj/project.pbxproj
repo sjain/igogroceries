@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CDF471CE5A24903BB3363BE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA7CE5A4F04010B9556194 /* libPods.a */; };
+		E72E5D8017441A8B007A9284 /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E72E5D7F17441A8B007A9284 /* database.sqlite */; };
 		E74EA2CE1713681F00283EE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2CD1713681F00283EE1 /* UIKit.framework */; };
 		E74EA2D01713681F00283EE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2CF1713681F00283EE1 /* Foundation.framework */; };
 		E74EA2D21713681F00283EE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EA2D11713681F00283EE1 /* CoreGraphics.framework */; };
@@ -24,12 +25,12 @@
 		E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */; };
 		E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */; };
 		E7EE3FB31741942F0098EED9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E7EE3FB21741942F0098EED9 /* Podfile */; };
-		E7EE3FB51741994A0098EED9 /* database.db in Resources */ = {isa = PBXBuildFile; fileRef = E7EE3FB41741994A0098EED9 /* database.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94751580BF2D464FBE1AFCFF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9CBA7CE5A4F04010B9556194 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72E5D7F17441A8B007A9284 /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 		E74EA2CA1713681F00283EE1 /* iGoGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74EA2CD1713681F00283EE1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E74EA2CF1713681F00283EE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,6 @@
 		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		E7EE3FB21741942F0098EED9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		E7EE3FB41741994A0098EED9 /* database.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		E7EE3FB0174192EE0098EED9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7EE3FB41741994A0098EED9 /* database.db */,
+				E72E5D7F17441A8B007A9284 /* database.sqlite */,
 				E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */,
 			);
 			name = Resources;
@@ -212,7 +212,7 @@
 				E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */,
 				E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */,
 				E7EE3FB31741942F0098EED9 /* Podfile in Resources */,
-				E7EE3FB51741994A0098EED9 /* database.db in Resources */,
+				E72E5D8017441A8B007A9284 /* database.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

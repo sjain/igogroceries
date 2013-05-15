@@ -40,7 +40,7 @@
 - (void)openDatabase
 {
   NSLog(@"opening database");
-  NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"database.db"];
+  NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"database.sqlite"];
   _database = [FMDatabase databaseWithPath:path];
   [self.database open];
 }
