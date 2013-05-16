@@ -106,7 +106,6 @@
 {
   [self loadCityNames];
   FMResultSet *results = [_database executeQuery:@"select city, name, id from stores where us_state_id=? order by city asc, name asc", self.selectedStateID];
-  NSLog(@"loading stores for state");
   _cityStores = [[NSMutableDictionary alloc] initWithCapacity:100];
   while([results next])
   {

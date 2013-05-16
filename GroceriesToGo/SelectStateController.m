@@ -106,7 +106,6 @@
 - (void)loadStoresFromDatabase
 {
   FMResultSet *results = [_database executeQuery:@"select us_states.id, us_states.name, count(*) as count from us_states inner join stores on stores.us_state_id = us_states.id group by us_states.name order by us_states.name asc"];
-  NSLog(@"loading US state / store counts");
   _sortedStateIDs = [[NSMutableArray alloc] initWithCapacity:60];
   _stateNameAndStoreCount = [[NSMutableArray alloc] initWithCapacity:60];
   while([results next]) {

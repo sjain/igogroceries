@@ -39,7 +39,6 @@
 
 - (void)openDatabase
 {
-  NSLog(@"opening database");
   NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"database.sqlite"];
   _database = [FMDatabase databaseWithPath:path];
   [self.database open];
@@ -70,7 +69,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Saves changes in the application's managed object context before the application terminates.
-  NSLog(@"applicationWillTerminate() - closing database");
   [self.database close];
   [self saveContext];
 }
