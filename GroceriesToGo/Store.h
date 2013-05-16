@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSNumber *objectID;
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *address1;
 @property (strong, nonatomic) NSString *city;
 
 -(id)initWithObjectID:(NSNumber *)objectID Name:(NSString *)name AndCity:(NSString *)city;

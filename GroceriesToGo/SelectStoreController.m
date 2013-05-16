@@ -78,14 +78,15 @@
   static NSString *CellIdentifier = @"Cell";
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                  reuseIdentifier:CellIdentifier];
   }
 
   NSString *city = [_cities objectAtIndex:indexPath.section];
   NSArray *cityStores = [_cityStores objectForKey:city];
   Store *store = [cityStores objectAtIndex:indexPath.row];
   cell.textLabel.text = store.name;
-  cell.detailTextLabel.text = store.city;
+  cell.detailTextLabel.text = store.address1;
   return cell;
 }
 
@@ -105,13 +106,14 @@
 - (void)loadStores
 {
   [self loadCityNames];
-  FMResultSet *results = [_database executeQuery:@"select city, name, id from stores where us_state_id=? order by city asc, name asc", self.selectedStateID];
+  FMResultSet *results = [_database executeQuery:@"select city, name, id, address1 from stores where us_state_id=? order by city asc, name asc", self.selectedStateID];
   _cityStores = [[NSMutableDictionary alloc] initWithCapacity:100];
   while([results next])
   {
     NSString *city = [results stringForColumn:@"city"];
     NSString *name = [results stringForColumn:@"name"];
     int storeID  = [results intForColumn:@"id"];
+    NSString *address = [results stringForColumn:@"address1"];
     NSMutableArray *stores = [_cityStores objectForKey:city];
     if (!stores)
     {
@@ -121,6 +123,7 @@
     Store *store = [[Store alloc] initWithObjectID:[NSNumber numberWithInt:storeID]
                                               Name:name
                                            AndCity:city];
+    store.address1 = address;
     [stores addObject:store];
   }    
 }
