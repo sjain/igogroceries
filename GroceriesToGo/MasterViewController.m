@@ -64,7 +64,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
@@ -77,7 +77,8 @@
   NSDictionary *storeNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
   NSString *storeName = [storeNameAndCount objectForKey:@"state"];
   int storeCount = [((NSNumber *)[storeNameAndCount objectForKey:@"store_count"]) intValue];
-  cell.textLabel.text = [NSString stringWithFormat:@"%@ (%d)", storeName, storeCount];
+  cell.textLabel.text = storeName;
+  cell.detailTextLabel.text = [NSString stringWithFormat:@"%d stores", storeCount];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -109,18 +110,16 @@
 - (void)loadStoresFromDatabase
 {
   FMResultSet *results = [_database executeQuery:@"select us_states.id, us_states.name, count(*) as count from us_states inner join stores on stores.us_state_id = us_states.id group by us_states.name order by us_states.name asc"];
-  NSLog(@"iterating results");
+  NSLog(@"loading US state / store counts");
   _sortedStateIDs = [[NSMutableArray alloc] initWithCapacity:60];
   _stateNameAndStoreCount = [[NSMutableArray alloc] initWithCapacity:60];
   while([results next]) {
     int stateID  = [results intForColumn:@"id"];
     NSString *state = [results stringForColumn:@"name"];
     int count  = [results intForColumn:@"count"];
-    NSLog(@"Store: %@ - %d", state, count);
     [_sortedStateIDs addObject:[NSNumber numberWithInt:stateID]];
     [_stateNameAndStoreCount addObject:@{@"state": state, @"store_count": [NSNumber numberWithInt:count]}];
   }
-  NSLog(@"printing results done");
 }
 
 @end
