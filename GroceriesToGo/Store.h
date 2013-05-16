@@ -10,10 +10,10 @@
 
 @interface Store : NSObject
 
-@property (strong, nonatomic) NSNumber *objectID;
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *address1;
-@property (strong, nonatomic) NSString *city;
+@property (nonatomic, retain) NSNumber *objectID;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *address1;
+@property (nonatomic, retain) NSString *city;
 
 -(id)initWithObjectID:(NSNumber *)objectID Name:(NSString *)name AndCity:(NSString *)city;
 - (NSString *)description;
