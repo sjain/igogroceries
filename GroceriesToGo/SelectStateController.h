@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
+#import "SelectStoreController.h"
 
 @class StoreDetailController;
 
 @interface SelectStateController : UITableViewController
 
-@property (strong, nonatomic) StoreDetailController *detailViewController;
+@property (strong, nonatomic) SelectStoreController *selectStoreController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

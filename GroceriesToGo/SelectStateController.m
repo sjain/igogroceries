@@ -74,10 +74,10 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-  NSDictionary *storeNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
-  NSString *storeName = [storeNameAndCount objectForKey:@"state"];
-  int storeCount = [((NSNumber *)[storeNameAndCount objectForKey:@"store_count"]) intValue];
-  cell.textLabel.text = storeName;
+  NSDictionary *stateNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
+  NSString *stateName = [stateNameAndCount objectForKey:@"state"];
+  int storeCount = [((NSNumber *)[stateNameAndCount objectForKey:@"store_count"]) intValue];
+  cell.textLabel.text = stateName;
   cell.detailTextLabel.text = [NSString stringWithFormat:@"%d stores", storeCount];
 }
 
@@ -94,16 +94,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[StoreDetailController alloc] initWithNibName:@"StoreDetailController" bundle:nil];
-	    }
-        self.detailViewController.detailItem = object;
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
-    } else {
-        self.detailViewController.detailItem = object;
-    }
+  NSDictionary *stateNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
+  NSNumber *stateID = [stateNameAndCount objectForKey:@"state_id"];
+  self.selectStoreController = [[SelectStoreController alloc]
+                                initWithStyle:UITableViewStyleGrouped
+                                AndSelectedStateID:stateID];
+  [self.navigationController pushViewController:self.selectStoreController animated:YES];
 }
 
 
@@ -118,7 +114,11 @@
     NSString *state = [results stringForColumn:@"name"];
     int count  = [results intForColumn:@"count"];
     [_sortedStateIDs addObject:[NSNumber numberWithInt:stateID]];
-    [_stateNameAndStoreCount addObject:@{@"state": state, @"store_count": [NSNumber numberWithInt:count]}];
+    [_stateNameAndStoreCount addObject:@{
+     @"state": state,
+     @"store_count": [NSNumber numberWithInt:count],
+     @"state_id": [NSNumber numberWithInt:stateID]
+    }];
   }
 }
 
