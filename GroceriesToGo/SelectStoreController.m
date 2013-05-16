@@ -19,6 +19,7 @@
 
 - (void)loadCityNames;
 - (void)loadStores;
+- (NSString *)loadStateName;
 @end
 
 @implementation SelectStoreController
@@ -29,9 +30,10 @@
 {
   self = [super initWithStyle:style];
   if (self) {
-    self.selectedStateID = stateID;
-    self.title = NSLocalizedString(@"Select Store", @"Master");
     _database = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).database;
+    self.selectedStateID = stateID;
+    NSString *stateName = [self loadStateName];
+    self.title = NSLocalizedString(stateName, @"Master");
     [self loadStores];
   }
   return self;
@@ -138,6 +140,13 @@
 //    NSLog(@"City: [%@]", city);
     [_cities addObject:city];
   }
+}
+
+- (NSString *)loadStateName
+{
+  FMResultSet *results = [_database executeQuery:@"select name from us_states where id=?", self.selectedStateID];
+  [results next];
+  return [results stringForColumn:@"name"];
 }
 
 @end
