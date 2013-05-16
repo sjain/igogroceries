@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "SelectStateController.h"
+#import "StoreDetailController.h"
 
 @interface AppDelegate() {}
 
@@ -29,10 +29,10 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   [self openDatabase];
-  MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
-  self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+  SelectStateController *selectStateController = [[SelectStateController alloc] initWithNibName:@"SelectStateController" bundle:nil];
+  self.navigationController = [[UINavigationController alloc] initWithRootViewController:selectStateController];
   self.window.rootViewController = self.navigationController;
-  masterViewController.managedObjectContext = self.managedObjectContext;
+  selectStateController.managedObjectContext = self.managedObjectContext;
   [self.window makeKeyAndVisible];
   return YES;
 }

@@ -1,19 +1,19 @@
 //
-//  DetailViewController.m
+//  StoreDetailController.m
 //  GroceriesToGo
 //
 //  Created by Sharad Jain on 4/8/13.
 //  Copyright (c) 2013 GroceryPORT.com, Inc. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "StoreDetailController.h"
 
-@interface DetailViewController ()
+@interface StoreDetailController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
 
-@implementation DetailViewController
+@implementation StoreDetailController
 
 #pragma mark - Managing the detail item
 

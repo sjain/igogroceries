@@ -1,16 +1,16 @@
 //
-//  MasterViewController.m
+//  SelectStateController.m
 //  GroceriesToGo
 //
 //  Created by Sharad Jain on 4/8/13.
 //  Copyright (c) 2013 GroceryPORT.com, Inc. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "SelectStateController.h"
+#import "StoreDetailController.h"
 #import "FMDatabase.h"
 
-@interface MasterViewController () {
+@interface SelectStateController () {
   NSMutableArray *_sortedStateIDs;
   NSMutableArray *_stateNameAndStoreCount;
   FMDatabase *_database;
@@ -19,7 +19,7 @@
 - (void)loadStoresFromDatabase;
 @end
 
-@implementation MasterViewController
+@implementation SelectStateController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -97,7 +97,7 @@
     NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
 	    if (!self.detailViewController) {
-	        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil];
+	        self.detailViewController = [[StoreDetailController alloc] initWithNibName:@"StoreDetailController" bundle:nil];
 	    }
         self.detailViewController.detailItem = object;
         [self.navigationController pushViewController:self.detailViewController animated:YES];

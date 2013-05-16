@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  StoreDetailController.h
 //  GroceriesToGo
 //
 //  Created by Sharad Jain on 4/8/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface StoreDetailController : UIViewController <UISplitViewControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
 

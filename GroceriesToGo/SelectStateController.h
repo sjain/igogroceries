@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  SelectStateController.h
 //  GroceriesToGo
 //
 //  Created by Sharad Jain on 4/8/13.
@@ -10,11 +10,11 @@
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 
-@class DetailViewController;
+@class StoreDetailController;
 
-@interface MasterViewController : UITableViewController
+@interface SelectStateController : UITableViewController
 
-@property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) StoreDetailController *detailViewController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

@@ -20,10 +20,10 @@
 		E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E31713681F00283EE1 /* Default@2x.png */; };
 		E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E51713681F00283EE1 /* Default-568h@2x.png */; };
 		E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */; };
-		E74EA2EC1713681F00283EE1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EB1713681F00283EE1 /* MasterViewController.m */; };
-		E74EA2EF1713681F00283EE1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EE1713681F00283EE1 /* DetailViewController.m */; };
-		E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */; };
-		E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */; };
+		E74EA2EC1713681F00283EE1 /* SelectStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EB1713681F00283EE1 /* SelectStateController.m */; };
+		E74EA2EF1713681F00283EE1 /* StoreDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EE1713681F00283EE1 /* StoreDetailController.m */; };
+		E74EA2F21713681F00283EE1 /* SelectStateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* SelectStateController.xib */; };
+		E74EA2F81713681F00283EE1 /* StoreDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* StoreDetailController.xib */; };
 		E7EE3FB31741942F0098EED9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E7EE3FB21741942F0098EED9 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -46,12 +46,12 @@
 		E74EA2E31713681F00283EE1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E74EA2E51713681F00283EE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E74EA2E81713681F00283EE1 /* GroceriesToGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroceriesToGo.xcdatamodel; sourceTree = "<group>"; };
-		E74EA2EA1713681F00283EE1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		E74EA2EB1713681F00283EE1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E74EA2ED1713681F00283EE1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		E74EA2EE1713681F00283EE1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
-		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		E74EA2EA1713681F00283EE1 /* SelectStateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectStateController.h; sourceTree = "<group>"; };
+		E74EA2EB1713681F00283EE1 /* SelectStateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectStateController.m; sourceTree = "<group>"; };
+		E74EA2ED1713681F00283EE1 /* StoreDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreDetailController.h; sourceTree = "<group>"; };
+		E74EA2EE1713681F00283EE1 /* StoreDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreDetailController.m; sourceTree = "<group>"; };
+		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SelectStateController.xib; sourceTree = "<group>"; };
+		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StoreDetailController.xib; sourceTree = "<group>"; };
 		E7EE3FB21741942F0098EED9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,12 +142,12 @@
 		E7EE3FB1174192F60098EED9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E74EA2EA1713681F00283EE1 /* MasterViewController.h */,
-				E74EA2EB1713681F00283EE1 /* MasterViewController.m */,
-				E74EA2ED1713681F00283EE1 /* DetailViewController.h */,
-				E74EA2EE1713681F00283EE1 /* DetailViewController.m */,
-				E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */,
-				E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */,
+				E74EA2EA1713681F00283EE1 /* SelectStateController.h */,
+				E74EA2EB1713681F00283EE1 /* SelectStateController.m */,
+				E74EA2ED1713681F00283EE1 /* StoreDetailController.h */,
+				E74EA2EE1713681F00283EE1 /* StoreDetailController.m */,
+				E74EA2F01713681F00283EE1 /* SelectStateController.xib */,
+				E74EA2F61713681F00283EE1 /* StoreDetailController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -209,8 +209,8 @@
 				E74EA2E21713681F00283EE1 /* Default.png in Resources */,
 				E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */,
 				E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */,
-				E74EA2F21713681F00283EE1 /* MasterViewController_iPhone.xib in Resources */,
-				E74EA2F81713681F00283EE1 /* DetailViewController_iPhone.xib in Resources */,
+				E74EA2F21713681F00283EE1 /* SelectStateController.xib in Resources */,
+				E74EA2F81713681F00283EE1 /* StoreDetailController.xib in Resources */,
 				E7EE3FB31741942F0098EED9 /* Podfile in Resources */,
 				E72E5D8017441A8B007A9284 /* database.sqlite in Resources */,
 			);
@@ -257,8 +257,8 @@
 				E74EA2DC1713681F00283EE1 /* main.m in Sources */,
 				E74EA2E01713681F00283EE1 /* AppDelegate.m in Sources */,
 				E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */,
-				E74EA2EC1713681F00283EE1 /* MasterViewController.m in Sources */,
-				E74EA2EF1713681F00283EE1 /* DetailViewController.m in Sources */,
+				E74EA2EC1713681F00283EE1 /* SelectStateController.m in Sources */,
+				E74EA2EF1713681F00283EE1 /* StoreDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,20 +273,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E74EA2F01713681F00283EE1 /* MasterViewController_iPhone.xib */ = {
+		E74EA2F01713681F00283EE1 /* SelectStateController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E74EA2F11713681F00283EE1 /* en */,
 			);
-			name = MasterViewController_iPhone.xib;
+			name = SelectStateController.xib;
 			sourceTree = "<group>";
 		};
-		E74EA2F61713681F00283EE1 /* DetailViewController_iPhone.xib */ = {
+		E74EA2F61713681F00283EE1 /* StoreDetailController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E74EA2F71713681F00283EE1 /* en */,
 			);
-			name = DetailViewController_iPhone.xib;
+			name = StoreDetailController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
