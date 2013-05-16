@@ -115,6 +115,7 @@
 		E74EA2D51713681F00283EE1 /* GroceriesToGo */ = {
 			isa = PBXGroup;
 			children = (
+				E75288E61745876000AD41E5 /* Views */,
 				E75288E21745740200AD41E5 /* Models */,
 				E7EE3FB1174192F60098EED9 /* Controllers */,
 				E7EE3FB0174192EE0098EED9 /* Resources */,
@@ -148,6 +149,16 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		E75288E61745876000AD41E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E74EA2F01713681F00283EE1 /* SelectStateController.xib */,
+				E74EA2F61713681F00283EE1 /* StoreDetailController.xib */,
+				E75288DC1745688200AD41E5 /* SelectStoreController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E7EE3FB0174192EE0098EED9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,11 +175,8 @@
 				E74EA2EB1713681F00283EE1 /* SelectStateController.m */,
 				E74EA2ED1713681F00283EE1 /* StoreDetailController.h */,
 				E74EA2EE1713681F00283EE1 /* StoreDetailController.m */,
-				E74EA2F01713681F00283EE1 /* SelectStateController.xib */,
-				E74EA2F61713681F00283EE1 /* StoreDetailController.xib */,
 				E75288DA1745688100AD41E5 /* SelectStoreController.h */,
 				E75288DB1745688200AD41E5 /* SelectStoreController.m */,
-				E75288DC1745688200AD41E5 /* SelectStoreController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
