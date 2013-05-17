@@ -14,6 +14,6 @@
 
 @property (nonatomic, retain) NSNumber* selectedStateID;
 
-- (id)initWithStyle:(UITableViewStyle)style AndSelectedStateID:(NSNumber *)selectedStateID;
+- (id)initWithStateID:(NSNumber *)stateID;
 
 @end

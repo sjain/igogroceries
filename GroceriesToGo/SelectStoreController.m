@@ -10,6 +10,7 @@
 #import "FMDatabase.h"
 #import "AppDelegate.h"
 #import "Store.h"
+#import "StoreDetailController.h"
 
 @interface SelectStoreController () {
   NSMutableArray *_cities;
@@ -26,9 +27,9 @@
 
 @synthesize selectedStateID;
 
-- (id)initWithStyle:(UITableViewStyle)style AndSelectedStateID:(NSNumber *)stateID
+- (id)initWithStateID:(NSNumber *)stateID
 {
-  self = [super initWithStyle:style];
+  self = [super init];
   if (self) {
     _database = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).database;
     self.selectedStateID = stateID;
@@ -82,6 +83,7 @@
   if (cell == nil) {
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                   reuseIdentifier:CellIdentifier];
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
   }
 
   NSString *city = [_cities objectAtIndex:indexPath.section];
@@ -96,14 +98,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  // Navigation logic may go here. Create and push another view controller.
-  /*
-   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-   // ...
-   // Pass the selected object to the new view controller.
-   [self.navigationController pushViewController:detailViewController animated:YES];
-   */
+  NSString *city = [_cities objectAtIndex:indexPath.section];
+  NSArray *cityStores = [_cityStores objectForKey:city];
+  Store *store = [cityStores objectAtIndex:indexPath.row];
+  StoreDetailController *storeDetailController = [[StoreDetailController alloc]
+                                initWithSelectedStore:store];
+  [self.navigationController pushViewController:storeDetailController animated:YES];
 }
+
 
 - (void)loadStores
 {

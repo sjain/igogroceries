@@ -21,12 +21,12 @@
 		E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2E51713681F00283EE1 /* Default-568h@2x.png */; };
 		E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2E71713681F00283EE1 /* GroceriesToGo.xcdatamodeld */; };
 		E74EA2EC1713681F00283EE1 /* SelectStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EB1713681F00283EE1 /* SelectStateController.m */; };
-		E74EA2EF1713681F00283EE1 /* StoreDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E74EA2EE1713681F00283EE1 /* StoreDetailController.m */; };
 		E74EA2F21713681F00283EE1 /* SelectStateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F01713681F00283EE1 /* SelectStateController.xib */; };
-		E74EA2F81713681F00283EE1 /* StoreDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E74EA2F61713681F00283EE1 /* StoreDetailController.xib */; };
 		E75288DD1745688200AD41E5 /* SelectStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75288DB1745688200AD41E5 /* SelectStoreController.m */; };
 		E75288DE1745688200AD41E5 /* SelectStoreController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75288DC1745688200AD41E5 /* SelectStoreController.xib */; };
 		E75288E51745747200AD41E5 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = E75288E41745747200AD41E5 /* Store.m */; };
+		E75288ED1745B52B00AD41E5 /* StoreDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75288EB1745B52B00AD41E5 /* StoreDetailController.m */; };
+		E75288EE1745B52B00AD41E5 /* StoreDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75288EC1745B52B00AD41E5 /* StoreDetailController.xib */; };
 		E7EE3FB31741942F0098EED9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E7EE3FB21741942F0098EED9 /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -51,15 +51,15 @@
 		E74EA2E81713681F00283EE1 /* GroceriesToGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroceriesToGo.xcdatamodel; sourceTree = "<group>"; };
 		E74EA2EA1713681F00283EE1 /* SelectStateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectStateController.h; sourceTree = "<group>"; };
 		E74EA2EB1713681F00283EE1 /* SelectStateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectStateController.m; sourceTree = "<group>"; };
-		E74EA2ED1713681F00283EE1 /* StoreDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreDetailController.h; sourceTree = "<group>"; };
-		E74EA2EE1713681F00283EE1 /* StoreDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreDetailController.m; sourceTree = "<group>"; };
 		E74EA2F11713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SelectStateController.xib; sourceTree = "<group>"; };
-		E74EA2F71713681F00283EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StoreDetailController.xib; sourceTree = "<group>"; };
 		E75288DA1745688100AD41E5 /* SelectStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectStoreController.h; sourceTree = "<group>"; };
 		E75288DB1745688200AD41E5 /* SelectStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectStoreController.m; sourceTree = "<group>"; };
 		E75288DC1745688200AD41E5 /* SelectStoreController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectStoreController.xib; sourceTree = "<group>"; };
 		E75288E31745747200AD41E5 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		E75288E41745747200AD41E5 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		E75288EA1745B52B00AD41E5 /* StoreDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailController.h; sourceTree = "<group>"; };
+		E75288EB1745B52B00AD41E5 /* StoreDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailController.m; sourceTree = "<group>"; };
+		E75288EC1745B52B00AD41E5 /* StoreDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreDetailController.xib; sourceTree = "<group>"; };
 		E7EE3FB21741942F0098EED9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,8 +152,8 @@
 		E75288E61745876000AD41E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E75288EC1745B52B00AD41E5 /* StoreDetailController.xib */,
 				E74EA2F01713681F00283EE1 /* SelectStateController.xib */,
-				E74EA2F61713681F00283EE1 /* StoreDetailController.xib */,
 				E75288DC1745688200AD41E5 /* SelectStoreController.xib */,
 			);
 			name = Views;
@@ -173,10 +173,10 @@
 			children = (
 				E74EA2EA1713681F00283EE1 /* SelectStateController.h */,
 				E74EA2EB1713681F00283EE1 /* SelectStateController.m */,
-				E74EA2ED1713681F00283EE1 /* StoreDetailController.h */,
-				E74EA2EE1713681F00283EE1 /* StoreDetailController.m */,
 				E75288DA1745688100AD41E5 /* SelectStoreController.h */,
 				E75288DB1745688200AD41E5 /* SelectStoreController.m */,
+				E75288EA1745B52B00AD41E5 /* StoreDetailController.h */,
+				E75288EB1745B52B00AD41E5 /* StoreDetailController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -239,10 +239,10 @@
 				E74EA2E41713681F00283EE1 /* Default@2x.png in Resources */,
 				E74EA2E61713681F00283EE1 /* Default-568h@2x.png in Resources */,
 				E74EA2F21713681F00283EE1 /* SelectStateController.xib in Resources */,
-				E74EA2F81713681F00283EE1 /* StoreDetailController.xib in Resources */,
 				E7EE3FB31741942F0098EED9 /* Podfile in Resources */,
 				E72E5D8017441A8B007A9284 /* database.sqlite in Resources */,
 				E75288DE1745688200AD41E5 /* SelectStoreController.xib in Resources */,
+				E75288EE1745B52B00AD41E5 /* StoreDetailController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +288,9 @@
 				E74EA2E01713681F00283EE1 /* AppDelegate.m in Sources */,
 				E74EA2E91713681F00283EE1 /* GroceriesToGo.xcdatamodeld in Sources */,
 				E74EA2EC1713681F00283EE1 /* SelectStateController.m in Sources */,
-				E74EA2EF1713681F00283EE1 /* StoreDetailController.m in Sources */,
 				E75288DD1745688200AD41E5 /* SelectStoreController.m in Sources */,
 				E75288E51745747200AD41E5 /* Store.m in Sources */,
+				E75288ED1745B52B00AD41E5 /* StoreDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +311,6 @@
 				E74EA2F11713681F00283EE1 /* en */,
 			);
 			name = SelectStateController.xib;
-			sourceTree = "<group>";
-		};
-		E74EA2F61713681F00283EE1 /* StoreDetailController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E74EA2F71713681F00283EE1 /* en */,
-			);
-			name = StoreDetailController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

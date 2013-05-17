@@ -10,12 +10,17 @@
 
 @implementation Store
 
--(id)initWithObjectID:(NSNumber *)objectID Name:(NSString *)name AndCity:(NSString *)city;
+@synthesize objectID;
+@synthesize name;
+@synthesize address1;
+@synthesize city;
+
+-(id)initWithObjectID:(NSNumber *)objectIDIn Name:(NSString *)nameIn AndCity:(NSString *)cityIn;
 {
   self = [super init];
-  self.objectID = objectID;
-  self.name = name;
-  self.city = city;
+  self.objectID = objectIDIn;
+  self.name = nameIn;
+  self.city = cityIn;
   return self;
 }
 

@@ -80,24 +80,12 @@
   cell.detailTextLabel.text = [NSString stringWithFormat:@"%d stores", storeCount];
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
-
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NSDictionary *stateNameAndCount = [_stateNameAndStoreCount objectAtIndex:indexPath.row];
   NSNumber *stateID = [stateNameAndCount objectForKey:@"state_id"];
   self.selectStoreController = [[SelectStoreController alloc]
-                                initWithStyle:UITableViewStyleGrouped
-                                AndSelectedStateID:stateID];
+                                initWithStateID:stateID];
   [self.navigationController pushViewController:self.selectStoreController animated:YES];
 }
 

@@ -1,16 +1,20 @@
 //
 //  StoreDetailController.h
-//  GroceriesToGo
+//  iGoGroceries
 //
-//  Created by Sharad Jain on 4/8/13.
+//  Created by Sharad Jain on 5/16/13.
 //  Copyright (c) 2013 GroceryPORT.com, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "Store.h"
 
-@interface StoreDetailController : UIViewController <UISplitViewControllerDelegate>
+@interface StoreDetailController : UITableViewController {
+  Store *selectedStore;
+}
 
-@property (strong, nonatomic) id detailItem;
+@property (retain, nonatomic) Store *selectedStore;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+- (id)initWithSelectedStore:(Store *)storeIn;
+
 @end

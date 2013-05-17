@@ -1,81 +1,88 @@
 //
 //  StoreDetailController.m
-//  GroceriesToGo
+//  iGoGroceries
 //
-//  Created by Sharad Jain on 4/8/13.
+//  Created by Sharad Jain on 5/16/13.
 //  Copyright (c) 2013 GroceryPORT.com, Inc. All rights reserved.
 //
 
 #import "StoreDetailController.h"
+#import "AppDelegate.h"
+#import "FMDatabase.h"
 
-@interface StoreDetailController ()
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
-- (void)configureView;
+@interface StoreDetailController () {
+  FMDatabase *_database;
+}
+
 @end
 
 @implementation StoreDetailController
 
-#pragma mark - Managing the detail item
+@synthesize selectedStore;
 
-- (void)setDetailItem:(id)newDetailItem
+- (id)initWithSelectedStore:(Store *)storeIn
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
+  self = [super init];
+  if (self) {
+    self.selectedStore = storeIn;
+    _database = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).database;
+  }
+  return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+  [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"Detail", @"Detail");
-    }
-    return self;
-}
-							
-#pragma mark - Split view
+#pragma mark - Table view data source
 
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
-    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
-    self.masterPopoverController = popoverController;
+  return 1;
 }
 
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Called when the view is shown again in the split view, invalidating the button and popover controller.
-    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
-    self.masterPopoverController = nil;
+  return 3;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  static NSString *CellIdentifier = @"Cell";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  if (cell == nil) {
+    cell = [[UITableViewCell alloc]
+            initWithStyle:UITableViewCellStyleValue2
+            reuseIdentifier:CellIdentifier];
+  }
+  
+  switch (indexPath.row) {
+    case 0:
+      cell.textLabel.text = @"Address";
+      cell.detailTextLabel.text = selectedStore.address1;
+      break;
+    case 1:
+      cell.textLabel.text = @"Phone";
+      cell.detailTextLabel.text = @"(123)123.1232";
+      break;
+    case 2:
+      cell.textLabel.text = @"Email";
+      cell.detailTextLabel.text = @"info@groceryport.com";
+      break;
+    default:
+      cell.textLabel.text = @"Unknown";
+      cell.detailTextLabel.text = @"Unknown";
+      break;
+  }
+  
+  return cell;
+}
+
 
 @end

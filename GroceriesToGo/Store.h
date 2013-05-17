@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Store : NSObject
+@interface Store : NSObject {
+  NSNumber *objectID;
+  NSString *name;
+  NSString *address1;
+  NSString *city;
+}
 
 @property (nonatomic, retain) NSNumber *objectID;
 @property (nonatomic, retain) NSString *name;
