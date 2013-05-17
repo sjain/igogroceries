@@ -102,7 +102,7 @@
   NSArray *cityStores = [_cityStores objectForKey:city];
   Store *store = [cityStores objectAtIndex:indexPath.row];
   StoreDetailController *storeDetailController = [[StoreDetailController alloc]
-                                initWithSelectedStore:store];
+                                initWithSelectedStoreID:store.objectID];
   [self.navigationController pushViewController:storeDetailController animated:YES];
 }
 
@@ -139,7 +139,6 @@
   while([results next])
   {
     NSString *city = [results stringForColumn:@"city"];
-//    NSLog(@"City: [%@]", city);
     [_cities addObject:city];
   }
 }

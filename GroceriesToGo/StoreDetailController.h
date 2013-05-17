@@ -9,12 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Store.h"
 
-@interface StoreDetailController : UITableViewController {
-  Store *selectedStore;
-}
+@interface StoreDetailController : UITableViewController
 
-@property (retain, nonatomic) Store *selectedStore;
-
-- (id)initWithSelectedStore:(Store *)storeIn;
+- (id)initWithSelectedStoreID:(NSNumber *)storeID;
 
 @end
