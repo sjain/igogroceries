@@ -104,7 +104,7 @@
     case 1:
     {
       cell.textLabel.text = @"Phone";
-      cell.detailTextLabel.text = _selectedStore.phone;
+      cell.detailTextLabel.text = [_selectedStore phoneFormatted];
       break;
     }
     case 2:

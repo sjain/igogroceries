@@ -54,4 +54,30 @@
     return @"";
 }
 
+- (NSString *)phoneFormatted
+{
+  if (!self.phone || [self.phone length] == 0 )
+  {
+    return self.phone;
+  }
+  
+  NSString *phoneNumbers = [self.phone stringByReplacingOccurrencesOfString:@"(" withString:@""];
+  phoneNumbers = [phoneNumbers stringByReplacingOccurrencesOfString:@")" withString:@""];
+  phoneNumbers = [phoneNumbers stringByReplacingOccurrencesOfString:@"." withString:@""];
+  phoneNumbers = [phoneNumbers stringByReplacingOccurrencesOfString:@"-" withString:@""];
+  phoneNumbers = [phoneNumbers stringByReplacingOccurrencesOfString:@" " withString:@""];
+  if ([phoneNumbers length] == 10)
+  {
+    NSString *areaCode = [phoneNumbers substringWithRange:NSMakeRange(0, 3)];
+    NSString *phone3 = [phoneNumbers substringWithRange:NSMakeRange(3, 3)];
+    NSString *last4 = [phoneNumbers substringWithRange:NSMakeRange(6, 4)];
+    NSString *formattedString = [NSString stringWithFormat:@"(%@) %@-%@", areaCode, phone3, last4];
+    return formattedString;
+  }
+  else
+  {
+    return phoneNumbers;
+  }
+}
+
 @end
