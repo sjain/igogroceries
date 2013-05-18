@@ -80,4 +80,26 @@
   }
 }
 
+- (NSString *)cityStateZip
+{
+  NSString *cityStateZip = [NSString stringWithFormat:@"%@, %@ %@",
+                            self.city,
+                            self.stateCode,
+                            self.zip
+                            ];
+  return cityStateZip;
+}
+
+- (NSArray *)addressStrings
+{
+  NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:3];
+  [result addObject:self.address1];
+  if (self.address2 && self.address2.length > 0)
+  {
+    [result addObject:self.address2];
+  }
+  [result addObject:[self cityStateZip]];
+  return result;
+}
+
 @end

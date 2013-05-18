@@ -17,6 +17,7 @@
 }
 
 - (Store *)loadStore;
+- (NSString *)buildMultilineString:(NSArray *)addressLines;
 @end
 
 @implementation StoreDetailController
@@ -72,32 +73,10 @@
     case 0:
     {
       cell.textLabel.text = @"Address";
-      NSString *cityStateZip = [NSString stringWithFormat:@"%@, %@ %@",
-                                _selectedStore.city,
-                                _selectedStore.stateCode,
-                                _selectedStore.zip
-                                ];
-      NSString *addressString = nil;
-      int numberOfLines = 0;
-      if (_selectedStore.address2)
-      {
-        addressString = [NSString stringWithFormat:@"%@\n%@\n%@",
-                                   _selectedStore.address1,
-                                   _selectedStore.address2,
-                                   cityStateZip
-                                   ];
-        numberOfLines = 3;
-      }
-      else
-      {
-        addressString = [NSString stringWithFormat:@"%@\n%@",
-                         _selectedStore.address1,
-                         cityStateZip
-                         ];
-        numberOfLines = 2;
-      }
+      NSArray *addressLines = [_selectedStore addressStrings];
+      NSString *addressString = [self buildMultilineString:addressLines];
       cell.detailTextLabel.text = addressString;
-      cell.detailTextLabel.numberOfLines = numberOfLines;
+      cell.detailTextLabel.numberOfLines = addressLines.count;
       cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
       break;
     }
@@ -127,12 +106,20 @@
   CGFloat height = 0.0f;
   switch (indexPath.row) {
     case 0:
-      height = [super tableView:tableView heightForRowAtIndexPath:indexPath];
-      height = height + 30.0f;
-      break;
+    {
+      NSArray *addressLines = [_selectedStore addressStrings];
+      NSString *addressString = [self buildMultilineString:addressLines];
+      UIFont *font = [UIFont systemFontOfSize:[UIFont systemFontSize]];
+      CGSize withinSize = CGSizeMake(167, 1000); // 167 is the approximate width of detailTextLabel
+      CGSize size = [addressString sizeWithFont:font constrainedToSize:withinSize lineBreakMode:UILineBreakModeCharacterWrap];
+      height = size.height + 30;
+    }
+    break;
     default:
+    {
       height = [super tableView:tableView heightForRowAtIndexPath:indexPath];
-      break;
+    }
+    break;
   }
   return height;
 }
@@ -157,6 +144,18 @@
   store.zip = zip;
   store.phone = phone;
   return store;
+}
+
+- (NSString *)buildMultilineString:(NSArray *)addressLines
+{
+  NSMutableString *addressString = [NSMutableString stringWithString:@""];
+  for (NSString *line in addressLines) {
+    if (addressString.length == 0)
+      [addressString appendFormat:@"%@", line];
+    else
+      [addressString appendFormat:@"\n%@", line];
+  }
+  return addressString;
 }
 
 @end

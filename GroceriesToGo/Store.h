@@ -31,5 +31,7 @@
 -(id)initWithObjectID:(NSNumber *)objectID Name:(NSString *)name AndCity:(NSString *)city;
 - (NSString *)description;
 - (NSString *)phoneFormatted;
+- (NSString *)cityStateZip;
+- (NSArray *)addressStrings;
 
 @end
